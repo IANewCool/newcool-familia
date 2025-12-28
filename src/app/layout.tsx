@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Familia - NewCooltura Informada",
+  title: "Derecho de Familia Chile | NewCooltura Informada",
   description: "Tribunales de familia, calculadora de pension de alimentos y recursos legales",
+  keywords: ["tribunales familia", "pension alimentos", "divorcio", "tuicion", "derecho familia Chile"],
+  openGraph: {
+    title: "Derecho de Familia - NewCooltura Informada",
+    description: "Pension de alimentos y tribunales de familia",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
